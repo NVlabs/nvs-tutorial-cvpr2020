@@ -107,28 +107,6 @@ a:hover {color: #000000; text-decoration: underline; }
   border-radius: 50%;
 }
 
-#thumbs {   
-  width: 700px;
-  margin-left: auto; 
-  margin-right: auto;
-  
-  text-align: justify;
-  -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
-}
-#thumbs a {
-  vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-}
-.stretch {
-  width: 100%;
-  display: inline-block;
-  font-size: 0;
-  line-height: 0
-}
-
 
 #container_organizers {
   width: 700px;
@@ -171,80 +149,10 @@ a:hover {color: #000000; text-decoration: underline; }
       }
 
 @font-face {
-    font-family: 'LinuxLibertineBoldItalic';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/549224b54100debe150bf1d402ff842f/LinuxLibertineBoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineDisplayORegular';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/74c7e1c4dc53e459bd7df26de6925229/LinuxLibertineDisplayORegular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-      }
-
-@font-face {
     font-family: 'LinuxLibertineDisplayRegular';
         src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/e5a8dd611a88bf321b8de25747578e44/LinuxLibertineDisplayRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineInitialsInitials';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/e7a4b8be2677c8486155233dd7f06a04/LinuxLibertineInitialsInitials.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineInitialsOInitials';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/b77c143b1fcbc6b43175cccc2f4c4f31/LinuxLibertineInitialsOInitials.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineItalic';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/70eb12d644ec36f58af4a396d0c973ee/LinuxLibertineItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineMonoMono';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/de438417780773007d3832130c32d713/LinuxLibertineMonoMono.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineMonoOMono';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/20a19eb78133fca70229dc575fd91355/LinuxLibertineMonoOMono.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineOBold';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/b9a407c04c8ebe9bd08169248f6a1b9e/LinuxLibertineOBold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineOBoldItalic';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/1574618ce3a2140e099f0c3e519ef75e/LinuxLibertineOBoldItalic.otf') format('opentype');
-    font-weight: bold;
-    font-style: italic;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineOItalic';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/1b83a640b4a02c8a35812be609fac447/LinuxLibertineOItalic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
       }
 
 @font-face {
@@ -255,36 +163,8 @@ a:hover {color: #000000; text-decoration: underline; }
       }
 
 @font-face {
-    font-family: 'LinuxLibertineOSemibold';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/6449c32c414b9e50a348d4cee031b77f/LinuxLibertineOSemibold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineOSemiboldItalic';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/b8ef5dada1e50d44bb0482920fc3a79f/LinuxLibertineOSemiboldItalic.otf') format('opentype');
-    font-weight: bold;
-    font-style: italic;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineRegular';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/d772b5b67a27a0c8b2602bdd3fe1dd9f/LinuxLibertineRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-      }
-
-@font-face {
     font-family: 'LinuxLibertineSemibold';
         src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/0305b8a162ed85c958b471d756dc6309/LinuxLibertineSemibold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-      }
-
-@font-face {
-    font-family: 'LinuxLibertineSemiboldItalic';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/2fe23eb294b4969d4652d68163ecaed3/LinuxLibertineSemiboldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
       }

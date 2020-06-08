@@ -52,12 +52,14 @@ table, th, td {
 th {
     font-family: 'LinuxLibertineDisplayRegular'; 
     font-size: 24px;
-}
-
-td {
+    height: 50px;
+  }
+  
+  td {
     font-family: 'LinuxLibertineDisplayRegular'; 
     font-size: 24px;
-}
+    height: 50px;
+  }
 
 a:link {color: #000000; text-decoration: none; }
 a:active {color: #000000; text-decoration: none; }
@@ -117,11 +119,11 @@ a:hover {color: #000000; text-decoration: underline; }
 }
 
 #container_speakers {
-  width: 1000px;
+  width: 700px;
   text-align: justify;
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .box {

@@ -1,64 +1,65 @@
+/* h1 { font-family: "Open Sans"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+h3 { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+p { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }
+blockquote { font-family: "Open Sans"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
+pre { font-family: "Open Sans"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; } */
+
 body {
-  /* color:black; */
-  font-family: 'LinuxLibertineDisplayRegular';
+  font-family: 'Open Sans';
   color: #444444;
   background-color: white;
-  font-size: 24px;
+  font-size: 22px;
+    font-weight: 200;
 }
 
 h1 {
-    font-family: 'LinuxLibertineORegular'; 
+    font-family: 'Open Sans'; 
+    font-weight: 200;
     font-size: 40px;
     color: #000000;
-    /* margin-bottom: 5px; */
-}
-
-h2 {
-    font-family: 'LinuxLibertineSemibold'; 
+  }
+  
+  h2 {
+    font-family: 'Open Sans'; 
+    font-weight: 200;
     font-size: 30px;
     color: #000000;
     text-align: center;
-}
-
-h2 {
-    font-family: 'LinuxLibertineSemibold'; 
+  }
+  
+  h3 {
+    font-family: 'Open Sans'; 
+    font-weight: 200;
     font-size: 30px;
     color: #000000;
     text-align: center;
-}
-
-h3 {
-    font-family: 'LinuxLibertineSemibold'; 
-    font-size: 24px;
-    color: #000000;
-    text-align: center;
-}
-
-h4 {
+  }
+  
+  h4 {
     color: #000000;
     font-weight: normal;
     margin-bottom: 2px;
     text-align: center;
-}
+  }
 
 table, th, td {
   border: 0px solid black;
   vertical-align: middle;
   text-align: center;
-  /*border-collapse: collapse;*/
-  /*border-spacing: 0;*/
 }
 
 th {
-    font-family: 'LinuxLibertineDisplayRegular'; 
-    font-size: 24px;
+    font-family: 'Open Sans'; 
+    font-size: 28px;
     height: 50px;
+    font-weight: 200;
   }
   
   td {
-    font-family: 'LinuxLibertineDisplayRegular'; 
+    font-family: 'Open Sans'; 
     font-size: 24px;
     height: 50px;
+    font-weight: 200;
   }
 
 a:link {color: #000000; text-decoration: none; }
@@ -141,7 +142,7 @@ a:hover {color: #000000; text-decoration: underline; }
   font-size: 0;
   line-height: 0
 }
-
+/* 
 
 @font-face {
     font-family: 'LinuxLibertineORegular';
@@ -158,15 +159,8 @@ a:hover {color: #000000; text-decoration: underline; }
       }
 
 @font-face {
-    font-family: 'LinuxLibertineORegular';
-        src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/988f66c65b10dd49d02579bed6e3aa74/LinuxLibertineORegular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-      }
-
-@font-face {
     font-family: 'LinuxLibertineSemibold';
         src: url('/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/0305b8a162ed85c958b471d756dc6309/LinuxLibertineSemibold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-      }
+      } */

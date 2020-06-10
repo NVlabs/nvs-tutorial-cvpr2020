@@ -120,7 +120,15 @@ a:hover {color: #000000; text-decoration: underline; }
 }
 
 #container_speakers {
-  width: 700px;
+  width: 800px;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  margin-bottom: 20px;
+}
+
+#container_speakers_3 {
+  width: 600px;
   text-align: justify;
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;

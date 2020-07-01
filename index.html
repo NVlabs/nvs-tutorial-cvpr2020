@@ -1,51 +1,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Novel View Synthesis: From Depth-Based Warping to Multi-Plane Images and Beyond</title>
-  <meta name="author" content="Orazio Gallo">
-  <meta name="keywords" content="deep learning, tutorial, novel view synthesis, Multi-Plane imaging, ">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-</head>
-
-
-
-<body>
-
-  <div align="center">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Novel View Synthesis: From Depth-Based Warping to Multi-Plane Images and Beyond</title>
+    <meta name="author" content="Orazio Gallo">
+    <meta name="keywords" content="deep learning, tutorial, novel view synthesis, Multi-Plane imaging, ">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  </head>
+  
+  
+  
+  <body>
     
-    <div class="titlesection">
-      <h2>CVPR 2020 Tutorial on</h2>
-      <h1>Novel View Synthesis: From Depth-Based Warping to Multi-Plane Images and Beyond</h1>
-      <video loop="" autoplay="" muted="" height="167" ">
-        <source src="imgs/jump.mp4" type="video/mp4">
-        </video>
+    <div align="center">
+      
+      <div class="titlesection">
+        <h2>CVPR 2020 Tutorial on</h2>
+        <h1>Novel View Synthesis: From Depth-Based Warping to Multi-Plane Images and Beyond</h1>
         <video loop="" autoplay="" muted="" height="167" ">
-          <source src="https://storage.googleapis.com/nerf_data/website_renders/orchid.mp4" type="video/mp4">
+          <source src="imgs/jump.mp4" type="video/mp4">
           </video>
-          <img src="imgs/synsin.gif" height="167">
-      <video loop="" autoplay="" muted="" height="167" ">
-        <source src="imgs/evs.mp4" type="video/mp4">
-        </video>
-    </div>
-      
-    <div class="textsection">
-      Novel view synthesis is a long-standing problem at the intersection of computer graphics and computer vision.
-      Seminal work in this field dates back to the 1990s, with early methods proposing to interpolate either between corresponding pixels from the input images, or between rays in space.
-      Recent deep learning methods enabled tremendous improvements to the quality of the results, and brought renewed popularity to the field.
-      The teaser above shows novel view synthesis from different recent methods. <i>From left to right: Yoon et al. [1], Mildenhall et al. [2], Wiles et al. [3], and Choi et al. [4]. Images and videos courtesy of the respective authors.</i>
-    </div>
-      
+          <video loop="" autoplay="" muted="" height="167" ">
+            <source src="https://storage.googleapis.com/nerf_data/website_renders/orchid.mp4" type="video/mp4">
+            </video>
+            <img src="imgs/synsin.gif" height="167">
+            <video loop="" autoplay="" muted="" height="167" ">
+              <source src="imgs/evs.mp4" type="video/mp4">
+              </video>
+            </div>
+            
+            <div class="textsection">
+              Novel view synthesis is a long-standing problem at the intersection of computer graphics and computer vision.
+              Seminal work in this field dates back to the 1990s, with early methods proposing to interpolate either between corresponding pixels from the input images, or between rays in space.
+              Recent deep learning methods enabled tremendous improvements to the quality of the results, and brought renewed popularity to the field.
+              The teaser above shows novel view synthesis from different recent methods. <i>From left to right: Yoon et al. [1], Mildenhall et al. [2], Wiles et al. [3], and Choi et al. [4]. Images and videos courtesy of the respective authors.</i>
+            </div>
+            
     <div class="titlesection">
+      <h3 style="color:red"> >>>  <a href="https://youtu.be/OEUHalxanuc?t=165", target="_blank">If you missed it, you can watch the full replay here</a> <<<</h3>
+    </div>
+    <div class="textsection">
       We would like to thank again our speakers for the great talks, which made this tutorial really great.
-      <h3 style="color:red"> >>>  <a href="https://youtu.be/OEUHalxanuc?t=165", target="_blank">If you missed it, you can watch the full replay here</a>. <<<</h3>
       You can also click on the links in the table below to go to specific talks.
       We will share the slides from the talks soon.
     </div>
-
+    
     <div class="textsection">
       <h3>Goal of the Tutorial</h3>
       In this tutorial we will first introduce the problem, including offering context and a taxonomy of the different methods. We will then have talks by the researchers behind the most recent approaches in the field.
@@ -55,7 +57,8 @@
     <div class="textsection">
       <h3>Date and Location</h3>
       <div align="center">
-        The tutorial took place on June 14th, 2020 within CVPR 2020.
+        The tutorial took place on June 14th, 2020 within CVPR 2020.</br>
+        Contact us <a href="mailto:ogallo@nvidia.com">here</a>.
       </div>
     </div>
     
@@ -63,17 +66,17 @@
     <div id="container_organizers">
       <div class="box">
         <img class="circularImage" src="imgs/orazio_s.jpeg" border="1" width="150" alt="Orazio's pic"></br>
-        Orazio Gallo <a href="https://twitter.com/0razio?ref_src=twsrc%5Etfw"><img src="imgs/twitter.jpeg" height="19"></a></br>
+        <a href="http://alumni.soe.ucsc.edu/~orazio/", target="_blank">Orazio Gallo</a> <a href="https://twitter.com/0razio?ref_src=twsrc%5Etfw"><img src="imgs/twitter.jpeg" height="19"></a></br>
         NVIDIA
       </div>
       <div class="box">
         <img class="circularImage" src="imgs/alejandro_s.jpeg"  border="1" width="150" alt="Alejandro's pic"></br>
-        <a href="https://research.nvidia.com/person/alejandro-troccoli">Alejandro Troccoli</a></br>
+        <a href="https://research.nvidia.com/person/alejandro-troccoli", target="_blank">Alejandro Troccoli</a></br>
         NVIDIA
       </div>
       <div class="box">
         <img class="circularImage" src="imgs/varun_s.jpeg"  border="1" width="150" alt="Varun's pic"></br>
-        <a href="https://varunjampani.github.io">Varun Jampani</a></br>
+        <a href="https://varunjampani.github.io", target="_blank">Varun Jampani</a></br>
         Google
       </div>
       <span class="stretch"></span>
@@ -83,13 +86,13 @@
     <div id="container_speakers">
       <div class="box">
         <img class="circularImage" src="imgs/rick_s.jpg" border="1" width="150" alt="Rick's pic"></br>
-        <a href="http://szeliski.org/RichardSzeliski.htm">Rick Szeliski</a></br>
+        <a href="http://szeliski.org/RichardSzeliski.htm", target="_blank">Rick Szeliski</a></br>
         Facebook
       </div>
       
       <div class="box">
         <img class="circularImage" src="imgs/pratul_s.jpg"  border="1" width="150" alt="Pratul's pic"></br>
-        <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a></br>
+        <a href="https://people.eecs.berkeley.edu/~pratul/", target="_blank">Pratul Srinivasan</a></br>
         UC Berkeley
       </div>
       
@@ -101,7 +104,7 @@
       
         <div class="box">
           <img class="circularImage" src="imgs/olivia_s.jpg" border="1" width="150" alt="Olivia's pic"></br>
-          <a href="http://www.robots.ox.ac.uk/~ow/">Olivia Wiles</a></br>
+          <a href="http://www.robots.ox.ac.uk/~ow/", target="_blank">Olivia Wiles</a></br>
           University of Oxford
         </div>
         
@@ -111,19 +114,19 @@
     <div id="container_speakers_3">
       <div class="box">
         <img class="circularImage" src="imgs/jaeshin_s.jpg" border="1" width="150" alt="Jae Shin's pic"></br>
-        <a href="https://www-users.cs.umn.edu/~jsyoon/">Jae Shin Yoon</a></br>
+        <a href="https://www-users.cs.umn.edu/~jsyoon/", target="_blank">Jae Shin Yoon</a></br>
         UMN
       </div>
       
       <div class="box">
         <img class="circularImage" src="imgs/gaurav_s.jpg" border="1" width="150" alt="Gaurav's pic"></br>
-        <a href="https://gchauras.github.io/research/">Gaurav Chaurasia</a></br>
+        <a href="https://gchauras.github.io/research/", target="_blank">Gaurav Chaurasia</a></br>
         Oculus
       </div>
       
       <div class="box">
         <img class="circularImage" src="imgs/nima_s.jpg"  border="1" width="150" alt="Nima's pic"></br>
-        <a href="http://faculty.cs.tamu.edu/nimak/">Nima Kalantari</a></br>
+        <a href="http://faculty.cs.tamu.edu/nimak/", target="_blank">Nima Kalantari</a></br>
         Texas A&M
       </div>
       <span class="stretch"></span>
@@ -145,8 +148,9 @@
         <tr>
           <td bgcolor="#DDDDDD">9:20 - 9:50</td>
           <td>
-            Novel View Synthesis: A Gentle Introduction
-            <a href="https://youtu.be/OEUHalxanuc?t=374">[Video]</a>
+            Novel View Synthesis: A Gentle Introduction</br>
+            <a href="https://youtu.be/OEUHalxanuc?t=374", target="_blank">[Video]</a>
+            <span style="color:silver">[Slides]</span>
           </td>
           <td>Orazio</td>
           </tr>
@@ -154,8 +158,9 @@
           <tr>
             <td bgcolor="#DDDDDD">9:50 - 10:20</td>
             <td>
-              Reflections on Image-Based Rendering
-              <a href="https://youtu.be/OEUHalxanuc?t=1823">[Video]</a>
+              Reflections on Image-Based Rendering</br>
+              <a href="https://youtu.be/OEUHalxanuc?t=1823", target="_blank">[Video]</a>
+              <a href="https://drive.google.com/file/d/1WiNAlxnX4Nnl4svK5ZFgMxf_WW76_jL4/view?usp=sharing", target="_blank">[Slides (pdf)]</a>
             </td>
             <td>Rick</td>
           </tr>
@@ -163,8 +168,9 @@
           <tr>
             <td bgcolor="#DDDDDD">10:20 - 10:50</td>
             <td>
-              SynSin: Single Image View Synthesis
-              <a href="https://youtu.be/OEUHalxanuc?t=4081">[Video]</a>
+              SynSin: Single Image View Synthesis</br>
+              <a href="https://youtu.be/OEUHalxanuc?t=4081", target="_blank">[Video]</a>
+              <a href="https://drive.google.com/file/d/1v0JYy4HV8cfWv96404C5UBMw3_oUtViG/view?usp=sharing", target="_blank">[Slides (pdf)]</a>
             </td>
             <td>Olivia</td>
           </tr>
@@ -178,8 +184,10 @@
           <tr>
             <td bgcolor="#DDDDDD">11:00 - 11:30</td>
             <td>
-              View synthesis with Multiplane Images
-              <a href="https://youtu.be/OEUHalxanuc?t=6106">[Video]</a>
+              View synthesis with Multiplane Images</br>
+              <a href="https://youtu.be/OEUHalxanuc?t=6106", target="_blank">[Video]</a>
+              <span style="color:silver">[Slides]</span>
+              <!-- <a href="about:blank", target="_blank">[Slides]</a> -->
             </td>
             <td>Richard</td>
           </tr>
@@ -187,8 +195,9 @@
           <tr>
             <td bgcolor="#DDDDDD">11:30 - 12:00</td>
             <td>
-              View Synthesis and Immersive Mixed Reality for VR devices
-              <a href="https://youtu.be/OEUHalxanuc?t=8134">[Video]</a>
+              View Synthesis and Immersive Mixed Reality for VR devices</br>
+              <a href="https://youtu.be/OEUHalxanuc?t=8134", target="_blank">[Video]</a>
+              <a href="https://drive.google.com/file/d/1PgAWO3lCAFNd_BNHFmpvOZZwaK06M6_8/view?usp=sharing", target="_blank">[Slides (pptx)]</a>
             </td>
             <td>Gaurav</td>
           </tr>
@@ -203,8 +212,9 @@
           <tr>
             <td bgcolor="#DDDDDD">12:45 - 13:15</td>
             <td>
-              View and Frame Interpolation for Consumer Light Field Cameras
-              <a href="https://youtu.be/OEUHalxanuc?t=12570">[Video]</a>
+              View and Frame Interpolation for Consumer Light Field Cameras</br>
+              <a href="https://youtu.be/OEUHalxanuc?t=12570", target="_blank">[Video]</a>
+              <a href="https://drive.google.com/file/d/1p2TG2zCxtS5JRRwsaLgO8pE9XahbjNEa/view?usp=sharing", target="_blank">[Slides (pptx)]</a>
             </td>
             <td>Nima</td>
           </tr>
@@ -212,8 +222,10 @@
           <tr>
             <td bgcolor="#DDDDDD">13:15 - 13:45</td>
             <td>
-              NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis
-              <a href="https://youtu.be/OEUHalxanuc?t=14308">[Video]</a>
+              NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</br>
+              <a href="https://youtu.be/OEUHalxanuc?t=14308", target="_blank">[Video]</a>
+              <a href="https://drive.google.com/file/d/1dR9FLJekvOrY_Mg7-00c3O72A0x2ai_i/view?usp=sharing", target="_blank">[Slides (pdf)]</a>
+              <a href="https://drive.google.com/file/d/1-jUmmVWdBHm9gKS9QZa096IIgs1ngGNQ/view?usp=sharing", target="_blank">[Slides (key)]</a>
             </td>
             <td>Pratul</td>
           </tr>
@@ -221,8 +233,9 @@
           <tr>
             <td bgcolor="#DDDDDD">13:45 - 14:15</td>
             <td>
-              Novel View Synthesis from Dynamic Scenes
-              <a href="https://youtu.be/OEUHalxanuc?t=16154">[Video]</a>
+              Novel View Synthesis from Dynamic Scenes</br>
+              <a href="https://youtu.be/OEUHalxanuc?t=16154", target="_blank">[Video]</a>
+              <a href="https://drive.google.com/file/d/1hZZUh5geAWmy_BLtljh9UvMmwchOvuB1/view?usp=sharing", target="_blank">[Slides (pdf)]</a>
             </td>
             <td>Jae Shin</td>
           </tr>
@@ -235,8 +248,8 @@
           
           <tr>
             <td bgcolor="#DDDDDD">14:30 - 15:30</td>
-            <td>Round Table Discussion With the Invited Speakers
-            <a href="https://youtu.be/OEUHalxanuc?t=18715">[Video]</a>
+            <td>Round Table Discussion With the Invited Speakers</br>
+            <a href="https://youtu.be/OEUHalxanuc?t=18715", target="_blank">[Video]</a>
             </td>
             <td></td>
           </tr>
@@ -247,9 +260,6 @@
   </div>
 </div>
 
-<div align="center">
-<a href="mailto:ogallo@nvidia.com">Contact Us</a>
-</div>
   <div class="textsection">
     
     
